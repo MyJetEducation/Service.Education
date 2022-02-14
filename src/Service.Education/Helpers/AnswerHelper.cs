@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using Service.Education.Constants;
 using Service.Education.Structure;
 
@@ -12,7 +13,12 @@ namespace Service.Education.Helpers
 		{
 			ITaskTestAnswer answer = answers.FirstOrDefault(model => model.Number == questionNumber);
 
-			return CountProgress(answer != null && answerNumbers.Intersect(answer.Value).Count() == answerNumbers.Length, progressPrc);
+			if (answer == null)
+				return Progress.MinProgress;
+
+			int correctAnswerCount = answerNumbers.Intersect(answer.Value).Count();
+
+			return (int) Math.Round((double) progressPrc / answerNumbers.Length * correctAnswerCount);
 		}
 
 		public static int CheckAnswer(int progressPrc, ITaskTrueFalseAnswer[] answers, int questionNumber, bool answerValue)
