@@ -2,7 +2,7 @@
 using Service.Education.Constants;
 using Service.Education.Helpers;
 
-namespace Service.Education.Tests
+namespace Service.Education.Tests.Helpers
 {
 	public class AnswerHelperTests
 	{
