@@ -12,8 +12,15 @@ namespace Service.Education.Helpers
 		public static int CheckAnswer(int progressPrc, ITaskTestAnswer[] answers, int questionNumber, params int[] answerNumbers)
 		{
 			ITaskTestAnswer answer = answers.FirstOrDefault(model => model.Number == questionNumber);
-
+			
+			//Wrong answer number
 			if (answer == null)
+				return Progress.MinProgress;
+
+			int incorrectAnswerCount = answer.Value.Except(answerNumbers).Count();
+
+			//Present any incorrect answers
+			if (incorrectAnswerCount > 0)
 				return Progress.MinProgress;
 
 			int correctAnswerCount = answerNumbers.Intersect(answer.Value).Count();
