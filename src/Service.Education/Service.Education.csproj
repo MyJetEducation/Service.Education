@@ -17,4 +17,8 @@
     <Folder Include="Structure\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference PrivateAssets="All" Include="MyJetEducation.Service.Core.Client" Version="1.0.36" />
+  </ItemGroup>
+
 </Project>
