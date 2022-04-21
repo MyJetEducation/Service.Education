@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 using Service.Education.Constants;
-using Service.Education.Contracts.Task;
+using Service.Education.Contracts;
 using Service.Education.Structure;
 
 namespace Service.Education.Helpers

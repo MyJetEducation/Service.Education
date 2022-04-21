@@ -1,6 +1,6 @@
 ﻿using NUnit.Framework;
 using Service.Education.Constants;
-using Service.Education.Contracts.Task;
+using Service.Education.Contracts;
 using Service.Education.Helpers;
 
 namespace Service.Education.Tests.Helpers

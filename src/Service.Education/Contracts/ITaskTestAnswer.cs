@@ -1,4 +1,4 @@
-﻿namespace Service.Education.Contracts.Task
+﻿namespace Service.Education.Contracts
 {
 	public interface ITaskTestAnswer
 	{
