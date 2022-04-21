@@ -2,10 +2,10 @@
 {
 	public interface IUnitState
 	{
-		public int Unit { get; set; }
+		int Unit { get; set; }
 
-		public int TestScore { get; set; }
+		int TestScore { get; set; }
 
-		public ITaskState[] Tasks { get; set; }
+		ITaskState[] Tasks { get; set; }
 	}
 }

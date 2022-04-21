@@ -2,10 +2,10 @@
 {
 	public interface ITaskRetryInfo
 	{
-		public bool InRetry { get; set; }
+		bool InRetry { get; set; }
 
-		public bool CanRetryByTime { get; set; }
+		bool CanRetryByTime { get; set; }
 
-		public bool CanRetryByCount { get; set; }
+		bool CanRetryByCount { get; set; }
 	}
 }

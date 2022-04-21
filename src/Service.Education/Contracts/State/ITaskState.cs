@@ -2,10 +2,10 @@
 {
 	public interface ITaskState
 	{
-		public int Task { get; set; }
+		int Task { get; set; }
 
-		public int TestScore { get; set; }
+		int TestScore { get; set; }
 
-		public ITaskRetryInfo RetryInfo { get; set; }
+		ITaskRetryInfo RetryInfo { get; set; }
 	}
 }

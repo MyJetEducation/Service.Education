@@ -2,8 +2,8 @@
 {
 	public interface IFinishStateRequest
 	{
-		public string UserId { get; set; }
+		string UserId { get; set; }
 
-		public int? Unit { get; set; }
+		int? Unit { get; set; }
 	}
 }

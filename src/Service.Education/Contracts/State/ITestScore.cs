@@ -2,8 +2,8 @@
 {
 	public interface ITestScore
 	{
-		public bool IsSuccess { get; set; }
+		bool IsSuccess { get; set; }
 
-		public IUnitState Unit { get; set; }
+		IUnitState Unit { get; set; }
 	}
 }

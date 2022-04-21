@@ -4,10 +4,10 @@ namespace Service.Education.Contracts.Task
 {
 	public interface ITaskVideoRequest
 	{
-		public string UserId { get; set; }
+		string UserId { get; set; }
 
-		public bool IsRetry { get; set; }
+		bool IsRetry { get; set; }
 
-		public TimeSpan Duration { get; set; }
+		TimeSpan Duration { get; set; }
 	}
 }
